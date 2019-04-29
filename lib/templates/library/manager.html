@@ -1,0 +1,7 @@
+{% extends 'layout.html' %}
+{% block title%} 功能导航 {% endblock %}
+{% block link%} 
+	<a href="{% url 'lib:index' %}"> 注销 [{{ g }}]</a> |
+	<a href="{% url 'lib:books' %}"> 图书管理 </a> |
+	<a href="{% url 'lib:users' %}"> 用户管理 </a>
+{%  endblock%}

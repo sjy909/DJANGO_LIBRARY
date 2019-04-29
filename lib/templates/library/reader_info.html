@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block title %} 个人主页 {% endblock %}
+
+{% block link %}
+	<a href="{% url 'lib:reader' u.id %}"> 返回  </a>
+	<a href="{% url 'lib:mod' u.id %}"> 修改 </a>
+{% endblock %}
+{% block body  %}
+	<h2> 用户信息 </h2>
+	<li> 用户名   {{ u.username }}</li>
+	<li> 学院名  {{ u.collage }} </li>
+	<li> 学号 {{u.num}} </li>
+	<li> 邮箱 {{u.email}}</li>
+{% endblock %}

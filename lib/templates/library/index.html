@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block title %}主页{% endblock %}
+{% block link %}
+  <a href="{% url 'lib:login' %}">管理员登录 </a>|
+  <a href="{% url 'lib:logins' %}">读者登录 </a>
+{% endblock %}
+
+{% block body %}
+  <h2>欢迎使用</h2>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+{% block title %} 欢迎使用 {% endblock %}
+{% block link %} 
+	<a href="{% url 'lib:logout' %}"> 注销[{{ u.username }}] </a> |
+	<a href="{% url 'lib:query' u.id %}"> 查询 </a> |
+	<a href="{% url 'lib:info' u.id %}"> 查看个人信息 </a> |
+	<a href="{% url 'lib:history' u.id %}"> 查看阅读记录 </a>
+
+{% endblock %}
+
+{% block body %}
+	<h2> 欢迎使用 </h2>
+{% endblock %}
