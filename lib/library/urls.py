@@ -21,4 +21,6 @@ urlpatterns = [
     url(r'^reader/(\d+)/$', views.reader, name='reader'),
     url(r'^mod/(\d+)/$', views.mod, name='mod'),
     url(r'^book_info/(\d+)/(\d+)/$', views.book_info, name='book_info'),
+    url(r'^edit/$', views.edit, name='edit'),
+    url(r'^ajax/$', views.ajax, name='ajax'),
 ]
